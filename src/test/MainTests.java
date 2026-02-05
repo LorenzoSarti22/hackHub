@@ -8,6 +8,6 @@ class MainTests {
 
     @Test
     void contextLoads() {
-        // Se il codice arriva qui senza crashare, il test è passato!
+        System.out.println("PIPELINE LOG");
     }
 }
