@@ -1,1 +1,1 @@
-# HackHub: Progetto esame di IDS A.A. 2025/26
+# HackHub: Progetto esame Applicazioni Web, Mobile e Cloud A.A. 2025/26
