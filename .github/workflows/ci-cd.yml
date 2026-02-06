@@ -18,7 +18,7 @@ jobs:
           java-version: '21'
           distribution: 'temurin'
 
-      - name: Test del segnale 
+      - name: Test del segnale
         run: echo ">>> La pipeline è arrivata qui dopo aver installato java"
 
       - name: Run Tests with Gradle
@@ -49,4 +49,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: tuo-utente-docker/hackhub-backend:latest
+          tags: lorenzosarti22/hackhub-backend:latest
