@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - MainTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>MainTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/it.unicam.coloni.hackhub.html">it.unicam.coloni.hackhub</a> &gt; MainTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.422s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">contextLoads()</td>
+<td class="success">0.422s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.4)
+
+2026-02-06T09:46:42.268+01:00  INFO 8198 --- [    Test worker] it.unicam.coloni.hackhub.MainTests       : Starting MainTests using Java 21.0.8 with PID 8198 (started by corradocecchini in /Users/corradocecchini/Desktop/Progetto Applicazioni /hackHub)
+2026-02-06T09:46:42.269+01:00  INFO 8198 --- [    Test worker] it.unicam.coloni.hackhub.MainTests       : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2026-02-06T09:46:42.735+01:00  INFO 8198 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-06T09:46:42.789+01:00  INFO 8198 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 9 JPA repository interfaces.
+2026-02-06T09:46:43.098+01:00  INFO 8198 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-06T09:46:43.138+01:00  INFO 8198 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-02-06T09:46:43.158+01:00  INFO 8198 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-06T09:46:43.319+01:00  INFO 8198 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-06T09:46:43.335+01:00  INFO 8198 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-06T09:46:43.440+01:00  INFO 8198 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-02-06T09:46:43.441+01:00  INFO 8198 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-06T09:46:43.462+01:00  WARN 8198 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-06T09:46:44.176+01:00  INFO 8198 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-06T09:46:44.184+01:00 DEBUG 8198 --- [    Test worker] org.hibernate.SQL                        : 
+    drop table if exists assessment cascade 
+Hibernate: 
+    drop table if exists assessment cascade 
+2026-02-06T09:46:44.187+01:00 DEBUG 8198 --- [    Test worker] org.hibernate.SQL                        : 
+    drop table if exists assessment_votes cascade 
+Hibernate: 
+    drop table if exists assessment_votes cascade 
+2026-02-06T09:46:44.187+01:00 DEBUG 8198 --- [    Test worker] org.hibernate.SQL                        : 
+    drop table if exists assignment cascade 
+Hibernate: 
+    drop table if exists assignment cascade 
+2026-02-06T09:46:44.188+01:00 DEBUG 8198 --- [    Test worker] org.hibernate.SQL                        : 
+    drop table if exists event cascade 
+Hibernate: 
+    drop table if exists event cascade 
+2026-02-06T09:46:44.188+01:00 DEBUG 8198 --- [    Test worker] org.hibernate.SQL                        : 
+    drop table if exists meeting cascade 
+Hibernate: 
+    drop table if exists meeting cascade 
+2026-02-06T09:46:44.189+01:00 DEBUG 8198 --- [    Test worker] org.hibernate.SQL                        : 
+    drop table if exists report cascade 
+Hibernate: 
+    drop table if exists report cascade 
+2026-02-06T09:46:44.189+01:00 DEBUG 8198 --- [    Test worker] org.hibernate.SQL                        : 
+    drop table if exists team cascade 
+Hibernate: 
+    drop table if exists team cascade 
+2026-02-06T09:46:44.189+01:00 DEBUG 8198 --- [    Test worker] org.hibernate.SQL                        : 
+    drop table if exists ticket cascade 
+Hibernate: 
+    drop table if exists ticket cascade 
+2026-02-06T09:46:44.190+01:00 DEBUG 8198 --- [    Test worker] org.hibernate.SQL                        : 
+    drop table if exists users cascade 
+Hibernate: 
+    drop table if exists users cascade 
+2026-02-06T09:46:44.190+01:00 DEBUG 8198 --- [    Test worker] org.hibernate.SQL                        : 
+    drop table if exists winners cascade 
+Hibernate: 
+    drop table if exists winners cascade 
+2026-02-06T09:46:44.192+01:00 DEBUG 8198 --- [    Test worker] org.hibernate.SQL                        : 
+    drop table if exists workspace cascade 
+Hibernate: 
+    drop table if exists workspace cascade 
+2026-02-06T09:46:44.194+01:00 DEBUG 8198 --- [    Test worker] org.hibernate.SQL                        : 
+    drop sequence if exists assessment_seq
+Hibernate: 
+    drop sequence if exists assessment_seq
+2026-02-06T09:46:44.197+01:00 DEBUG 8198 --- [    Test worker] org.hibernate.SQL                        : 
+    drop sequence if exists assignment_seq
+Hibernate: 
+    drop sequence if exists assignment_seq
+2026-02-06T09:46:44.198+01:00 DEBUG 8198 --- [    Test worker] org.hibernate.SQL                        : 
+    drop sequence if exists event_seq
+Hibernate: 
+    drop sequence if exists event_seq
+2026-02-06T09:46:44.199+01:00 DEBUG 8198 --- [    Test worker] org.hibernate.SQL                        : 
+    drop sequence if exists meeting_seq
+Hibernate: 
+    drop sequence if exists meeting_seq
+2026-02-06T09:46:44.199+01:00 DEBUG 8198 --- [    Test worker] org.hibernate.SQL                        : 
+    drop sequence if exists report_seq
+Hibernate: 
+    drop sequence if exists report_seq
+2026-02-06T09:46:44.200+01:00 DEBUG 8198 --- [    Test worker] org.hibernate.SQL                        : 
+    drop sequence if exists team_seq
+Hibernate: 
+    drop sequence if exists team_seq
+2026-02-06T09:46:44.200+01:00 DEBUG 8198 --- [    Test worker] org.hibernate.SQL                        : 
+    drop sequence if exists ticket_seq
+Hibernate: 
+    drop sequence if exists ticket_seq
+2026-02-06T09:46:44.200+01:00 DEBUG 8198 --- [    Test worker] org.hibernate.SQL                        : 
+    drop sequence if exists users_seq
+Hibernate: 
+    drop sequence if exists users_seq
+2026-02-06T09:46:44.201+01:00 DEBUG 8198 --- [    Test worker] org.hibernate.SQL                        : 
+    drop sequence if exists winners_seq
+Hibernate: 
+    drop sequence if exists winners_seq
+2026-02-06T09:46:44.202+01:00 DEBUG 8198 --- [    Test worker] org.hibernate.SQL                        : 
+    drop sequence if exists workspace_seq
+Hibernate: 
+    drop sequence if exists workspace_seq
+2026-02-06T09:46:44.212+01:00 DEBUG 8198 --- [    Test worker] org.hibernate.SQL                        : 
+    create sequence assessment_seq start with 1 increment by 50
+Hibernate: 
+    create sequence assessment_seq start with 1 increment by 50
+2026-02-06T09:46:44.214+01:00 DEBUG 8198 --- [    Test worker] org.hibernate.SQL                        : 
+    create sequence assignment_seq start with 1 increment by 50
+Hibernate: 
+    create sequence assignment_seq start with 1 increment by 50
+2026-02-06T09:46:44.216+01:00 DEBUG 8198 --- [    Test worker] org.hibernate.SQL                        : 
+    create sequence event_seq start with 1 increment by 50
+Hibernate: 
+    create sequence event_seq start with 1 increment by 50
+2026-02-06T09:46:44.219+01:00 DEBUG 8198 --- [    Test worker] org.hibernate.SQL                        : 
+    create sequence meeting_seq start with 1 increment by 50
+Hibernate: 
+    create sequence meeting_seq start with 1 increment by 50
+2026-02-06T09:46:44.220+01:00 DEBUG 8198 --- [    Test worker] org.hibernate.SQL                        : 
+    create sequence report_seq start with 1 increment by 50
+Hibernate: 
+    create sequence report_seq start with 1 increment by 50
+2026-02-06T09:46:44.221+01:00 DEBUG 8198 --- [    Test worker] org.hibernate.SQL                        : 
+    create sequence team_seq start with 1 increment by 50
+Hibernate: 
+    create sequence team_seq start with 1 increment by 50
+2026-02-06T09:46:44.223+01:00 DEBUG 8198 --- [    Test worker] org.hibernate.SQL                        : 
+    create sequence ticket_seq start with 1 increment by 50
+Hibernate: 
+    create sequence ticket_seq start with 1 increment by 50
+2026-02-06T09:46:44.223+01:00 DEBUG 8198 --- [    Test worker] org.hibernate.SQL                        : 
+    create sequence users_seq start with 1 increment by 50
+Hibernate: 
+    create sequence users_seq start with 1 increment by 50
+2026-02-06T09:46:44.224+01:00 DEBUG 8198 --- [    Test worker] org.hibernate.SQL                        : 
+    create sequence winners_seq start with 1 increment by 50
+Hibernate: 
+    create sequence winners_seq start with 1 increment by 50
+2026-02-06T09:46:44.226+01:00 DEBUG 8198 --- [    Test worker] org.hibernate.SQL                        : 
+    create sequence workspace_seq start with 1 increment by 50
+Hibernate: 
+    create sequence workspace_seq start with 1 increment by 50
+2026-02-06T09:46:44.234+01:00 DEBUG 8198 --- [    Test worker] org.hibernate.SQL                        : 
+    create table assessment (
+        created_at timestamp(6),
+        deleted_at timestamp(6),
+        event_id bigint not null,
+        id bigint not null,
+        judge_id bigint not null,
+        modified_at timestamp(6),
+        team_id bigint not null,
+        description TEXT,
+        primary key (id)
+    )
+Hibernate: 
+    create table assessment (
+        created_at timestamp(6),
+        deleted_at timestamp(6),
+        event_id bigint not null,
+        id bigint not null,
+        judge_id bigint not null,
+        modified_at timestamp(6),
+        team_id bigint not null,
+        description TEXT,
+        primary key (id)
+    )
+2026-02-06T09:46:44.240+01:00 DEBUG 8198 --- [    Test worker] org.hibernate.SQL                        : 
+    create table assessment_votes (
+        score integer,
+        assessment_id bigint not null,
+        criteria_name varchar(255) not null,
+        primary key (assessment_id, criteria_name)
+    )
+Hibernate: 
+    create table assessment_votes (
+        score integer,
+        assessment_id bigint not null,
+        criteria_name varchar(255) not null,
+        primary key (assessment_id, criteria_name)
+    )
+2026-02-06T09:46:44.243+01:00 DEBUG 8198 --- [    Test worker] org.hibernate.SQL                        : 
+    create table assignment (
+        created_at timestamp(6),
+        deleted_at timestamp(6),
+        event_id bigint,
+        id bigint not null,
+        modified_at timestamp(6),
+        team_id bigint,
+        user_id bigint,
+        role enum ('JUDGE','MENTOR','ORGANIZER','STUDENT'),
+        primary key (id)
+    )
+Hibernate: 
+    create table assignment (
+        created_at timestamp(6),
+        deleted_at timestamp(6),
+        event_id bigint,
+        id bigint not null,
+        modified_at timestamp(6),
+        team_id bigint,
+        user_id bigint,
+        role enum ('JUDGE','MENTOR','ORGANIZER','STUDENT'),
+        primary key (id)
+    )
+2026-02-06T09:46:44.244+01:00 DEBUG 8198 --- [    Test worker] org.hibernate.SQL                        : 
+    create table event (
+        end_date date,
+        start_date date,
+        created_at timestamp(6),
+        deleted_at timestamp(6),
+        id bigint not null,
+        modified_at timestamp(6),
+        name varchar(255),
+        rules_url varchar(255),
+        status enum ('CLOSED','EVALUATED','EVALUATING','RUNNING','SUBSCRIPTION','WAITING'),
+        primary key (id)
+    )
+Hibernate: 
+    create table event (
+        end_date date,
+        start_date date,
+        created_at timestamp(6),
+        deleted_at timestamp(6),
+        id bigint not null,
+        modified_at timestamp(6),
+        name varchar(255),
+        rules_url varchar(255),
+        status enum ('CLOSED','EVALUATED','EVALUATING','RUNNING','SUBSCRIPTION','WAITING'),
+        primary key (id)
+    )
+2026-02-06T09:46:44.247+01:00 DEBUG 8198 --- [    Test worker] org.hibernate.SQL                        : 
+    create table meeting (
+        created_at timestamp(6),
+        date timestamp(6),
+        deleted_at timestamp(6),
+        event_id bigint,
+        id bigint not null,
+        mentor_id bigint,
+        modified_at timestamp(6),
+        team_id bigint,
+        ticket_id bigint,
+        workspace_id bigint,
+        meeting_link varchar(255),
+        primary key (id)
+    )
+Hibernate: 
+    create table meeting (
+        created_at timestamp(6),
+        date timestamp(6),
+        deleted_at timestamp(6),
+        event_id bigint,
+        id bigint not null,
+        mentor_id bigint,
+        modified_at timestamp(6),
+        team_id bigint,
+        ticket_id bigint,
+        workspace_id bigint,
+        meeting_link varchar(255),
+        primary key (id)
+    )
+2026-02-06T09:46:44.250+01:00 DEBUG 8198 --- [    Test worker] org.hibernate.SQL                        : 
+    create table report (
+        author_id bigint,
+        created_at timestamp(6),
+        deleted_at timestamp(6),
+        event_id bigint,
+        id bigint not null,
+        modified_at timestamp(6),
+        team_id bigint,
+        workspace_id bigint,
+        description varchar(255),
+        primary key (id)
+    )
+Hibernate: 
+    create table report (
+        author_id bigint,
+        created_at timestamp(6),
+        deleted_at timestamp(6),
+        event_id bigint,
+        id bigint not null,
+        modified_at timestamp(6),
+        team_id bigint,
+        workspace_id bigint,
+        description varchar(255),
+        primary key (id)
+    )
+2026-02-06T09:46:44.251+01:00 DEBUG 8198 --- [    Test worker] org.hibernate.SQL                        : 
+    create table team (
+        created_at timestamp(6),
+        deleted_at timestamp(6),
+        id bigint not null,
+        modified_at timestamp(6),
+        primary key (id)
+    )
+Hibernate: 
+    create table team (
+        created_at timestamp(6),
+        deleted_at timestamp(6),
+        id bigint not null,
+        modified_at timestamp(6),
+        primary key (id)
+    )
+2026-02-06T09:46:44.255+01:00 DEBUG 8198 --- [    Test worker] org.hibernate.SQL                        : 
+    create table ticket (
+        status tinyint check (status between 0 and 2),
+        urgency integer check ((urgency&lt;=5) and (urgency&gt;=1)),
+        created_at timestamp(6),
+        deleted_at timestamp(6),
+        event_id bigint,
+        id bigint not null,
+        modified_at timestamp(6),
+        team_id bigint,
+        workspace_id bigint,
+        description varchar(255),
+        primary key (id)
+    )
+Hibernate: 
+    create table ticket (
+        status tinyint check (status between 0 and 2),
+        urgency integer check ((urgency&lt;=5) and (urgency&gt;=1)),
+        created_at timestamp(6),
+        deleted_at timestamp(6),
+        event_id bigint,
+        id bigint not null,
+        modified_at timestamp(6),
+        team_id bigint,
+        workspace_id bigint,
+        description varchar(255),
+        primary key (id)
+    )
+2026-02-06T09:46:44.260+01:00 DEBUG 8198 --- [    Test worker] org.hibernate.SQL                        : 
+    create table users (
+        birth_date date,
+        gender tinyint check (gender between 0 and 1),
+        created_at timestamp(6),
+        deleted_at timestamp(6),
+        id bigint not null,
+        modified_at timestamp(6),
+        email varchar(255),
+        first_name varchar(255),
+        last_name varchar(255),
+        password varchar(255),
+        photo_url varchar(255),
+        username varchar(255),
+        role enum ('JUDGE','MENTOR','ORGANIZER','STUDENT') not null,
+        primary key (id),
+        unique (username),
+        unique (email)
+    )
+Hibernate: 
+    create table users (
+        birth_date date,
+        gender tinyint check (gender between 0 and 1),
+        created_at timestamp(6),
+        deleted_at timestamp(6),
+        id bigint not null,
+        modified_at timestamp(6),
+        email varchar(255),
+        first_name varchar(255),
+        last_name varchar(255),
+        password varchar(255),
+        photo_url varchar(255),
+        username varchar(255),
+        role enum ('JUDGE','MENTOR','ORGANIZER','STUDENT') not null,
+        primary key (id),
+        unique (username),
+        unique (email)
+    )
+2026-02-06T09:46:44.274+01:00 DEBUG 8198 --- [    Test worker] org.hibernate.SQL                        : 
+    create table winners (
+        rank_position integer not null,
+        total_score float(53) not null,
+        created_at timestamp(6),
+        deleted_at timestamp(6),
+        event_id bigint not null,
+        id bigint not null,
+        modified_at timestamp(6),
+        team_id bigint not null,
+        primary key (id),
+        unique (event_id, rank_position)
+    )
+Hibernate: 
+    create table winners (
+        rank_position integer not null,
+        total_score float(53) not null,
+        created_at timestamp(6),
+        deleted_at timestamp(6),
+        event_id bigint not null,
+        id bigint not null,
+        modified_at timestamp(6),
+        team_id bigint not null,
+        primary key (id),
+        unique (event_id, rank_position)
+    )
+2026-02-06T09:46:44.277+01:00 DEBUG 8198 --- [    Test worker] org.hibernate.SQL                        : 
+    create table workspace (
+        created_at timestamp(6),
+        deleted_at timestamp(6),
+        event_id bigint,
+        id bigint not null,
+        mentor_id bigint,
+        modified_at timestamp(6),
+        team_id bigint,
+        primary key (id)
+    )
+Hibernate: 
+    create table workspace (
+        created_at timestamp(6),
+        deleted_at timestamp(6),
+        event_id bigint,
+        id bigint not null,
+        mentor_id bigint,
+        modified_at timestamp(6),
+        team_id bigint,
+        primary key (id)
+    )
+2026-02-06T09:46:44.281+01:00 DEBUG 8198 --- [    Test worker] org.hibernate.SQL                        : 
+    alter table if exists assessment_votes 
+       add constraint FKlfukktnbsbsvxcl9tav4jhckl 
+       foreign key (assessment_id) 
+       references assessment
+Hibernate: 
+    alter table if exists assessment_votes 
+       add constraint FKlfukktnbsbsvxcl9tav4jhckl 
+       foreign key (assessment_id) 
+       references assessment
+2026-02-06T09:46:44.291+01:00 DEBUG 8198 --- [    Test worker] org.hibernate.SQL                        : 
+    alter table if exists assignment 
+       add constraint FK2sd5q7fkxknhj2e6crgw922ef 
+       foreign key (event_id) 
+       references event
+Hibernate: 
+    alter table if exists assignment 
+       add constraint FK2sd5q7fkxknhj2e6crgw922ef 
+       foreign key (event_id) 
+       references event
+2026-02-06T09:46:44.293+01:00 DEBUG 8198 --- [    Test worker] org.hibernate.SQL                        : 
+    alter table if exists meeting 
+       add constraint FKo8tdf69ohkc65tndjpj9fveau 
+       foreign key (workspace_id) 
+       references workspace
+Hibernate: 
+    alter table if exists meeting 
+       add constraint FKo8tdf69ohkc65tndjpj9fveau 
+       foreign key (workspace_id) 
+       references workspace
+2026-02-06T09:46:44.295+01:00 DEBUG 8198 --- [    Test worker] org.hibernate.SQL                        : 
+    alter table if exists report 
+       add constraint FKnsx9rkto6gthfj5apchwc8107 
+       foreign key (workspace_id) 
+       references workspace
+Hibernate: 
+    alter table if exists report 
+       add constraint FKnsx9rkto6gthfj5apchwc8107 
+       foreign key (workspace_id) 
+       references workspace
+2026-02-06T09:46:44.298+01:00 DEBUG 8198 --- [    Test worker] org.hibernate.SQL                        : 
+    alter table if exists ticket 
+       add constraint FK4qs2emy7u57ht7u0k2mu7tlqy 
+       foreign key (workspace_id) 
+       references workspace
+Hibernate: 
+    alter table if exists ticket 
+       add constraint FK4qs2emy7u57ht7u0k2mu7tlqy 
+       foreign key (workspace_id) 
+       references workspace
+2026-02-06T09:46:44.305+01:00  INFO 8198 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-06T09:46:44.630+01:00  INFO 8198 --- [    Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-06T09:46:44.971+01:00  WARN 8198 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-06T09:46:44.990+01:00  INFO 8198 --- [    Test worker] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name JWTProvider
+2026-02-06T09:46:44.990+01:00  WARN 8198 --- [    Test worker] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2026-02-06T09:46:45.402+01:00  INFO 8198 --- [    Test worker] it.unicam.coloni.hackhub.MainTests       : Started MainTests in 3.273 seconds (process running for 3.925)
+Test completato
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>WARNING: A Java agent has been loaded dynamically (/Users/corradocecchini/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.14.19/154da3a65b4f4a909d3e5bdec55d1b2b4cbb6ce1/byte-buddy-agent-1.14.19.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.8</a> at 6 feb 2026, 09:46:45</p>
+</div>
+</div>
+</body>
+</html>
